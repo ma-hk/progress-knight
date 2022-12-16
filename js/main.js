@@ -109,7 +109,7 @@ const jobCategories = {
 }
 
 const skillCategories = {
-    "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation"],
+    "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation", "Instant win"],
     "Combat": ["Strength", "Battle tactics", "Muscle memory"],
     "Magic": ["Mana control", "Immortality", "Time warping", "Super immortality"],
     "Dark magic": ["Dark influence", "Evil control", "Intimidation", "Demon training", "Blood meditation", "Demon's wealth"]
