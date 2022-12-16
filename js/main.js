@@ -226,7 +226,8 @@ function addMultipliers() {
         task.xpMultipliers.push(getHappiness)
         task.xpMultipliers.push(getBindedTaskEffect("Dark influence"))
         task.xpMultipliers.push(getBindedTaskEffect("Demon training"))
-
+        task.xpMultipliers.push(getBindedTaskEffect("Prodigy"))
+        
         if (task instanceof Job) {
             task.incomeMultipliers.push(task.getLevelMultiplier.bind(task))
             task.incomeMultipliers.push(getBindedTaskEffect("Demon's wealth"))
