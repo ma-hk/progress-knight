@@ -62,7 +62,7 @@ const skillBaseData = {
     "Productivity": {name: "Productivity", maxXp: 100, effect: 0.01, description: "Job xp"},
     "Bargaining": {name: "Bargaining", maxXp: 100, effect: -0.01, description: "Expenses"},
     "Meditation": {name: "Meditation", maxXp: 100, effect: 0.01, description: "Happiness"},
-    "Instant win": {name: "Instant win", maxXp: 1, effect: 1.00, description: "All xp"},
+    "Prodigy": {name: "Prodigy", maxXp: 1, effect: 1.00, description: "All xp"},
 
     "Strength": {name: "Strength", maxXp: 100, effect: 0.01, description: "Military pay"},
     "Battle tactics": {name: "Battle tactics", maxXp: 100, effect: 0.01, description: "Military xp"},
@@ -109,7 +109,7 @@ const jobCategories = {
 }
 
 const skillCategories = {
-    "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation", "Instant win"],
+    "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation", "Prodigy"],
     "Combat": ["Strength", "Battle tactics", "Muscle memory"],
     "Magic": ["Mana control", "Immortality", "Time warping", "Super immortality"],
     "Dark magic": ["Dark influence", "Evil control", "Intimidation", "Demon training", "Blood meditation", "Demon's wealth"]
@@ -160,6 +160,7 @@ const tooltips = {
     "Productivity": "Learn to procrastinate less at work and receive more job experience per day.",
     "Bargaining": "Study the tricks of the trade and persuasive skills to lower any type of expense.",
     "Meditation": "Fill your mind with peace and tranquility to tap into greater happiness from within.",
+    "Prodigy": "it is what it is",
 
     "Strength": "Condition your body and strength through harsh training. Stronger individuals are paid more in the military.",
     "Battle tactics": "Create and revise battle strategies, improving experience gained in the military.",
@@ -1096,6 +1097,7 @@ gameData.requirements = {
 
     //Fundamentals
     "Concentration": new TaskRequirement([getTaskElement("Concentration")], []),
+    "Prodigy": new TaskRequirement([getTaskElement("Prodigy")], []),
     "Productivity": new TaskRequirement([getTaskElement("Productivity")], [{task: "Concentration", requirement: 5}]),
     "Bargaining": new TaskRequirement([getTaskElement("Bargaining")], [{task: "Concentration", requirement: 20}]),
     "Meditation": new TaskRequirement([getTaskElement("Meditation")], [{task: "Concentration", requirement: 30}, {task: "Productivity", requirement: 20}]),
